@@ -1,0 +1,20 @@
+[workspace]
+members = [
+    "packages/*",
+    "contracts/spectrum_*",
+    "contracts/astro_farms/*",
+    "contracts/farms/*",
+    "contracts/gov_proxies/*"
+]
+
+[profile.release.package.spectrum-protocol]
+opt-level = 3
+debug = false
+debug-assertions = false
+codegen-units = 1
+incremental = false
+
+[profile.release]
+rpath = false
+lto = true
+overflow-checks = true

@@ -1,0 +1,36 @@
+[package]
+name = "cw20-bonding"
+version = "0.14.2"
+authors = ["Ethan Frey/Rhenso Hernandez"]
+edition = "2018"
+description = "Implement basic bonding curve to issue cw20 tokens"
+license = "Apache-2.0"
+repository = "https://github.com/CosmWasm/cw-tokens"
+homepage = "https://cosmwasm.com"
+documentation = "https://docs.cosmwasm.com"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+backtraces = ["cosmwasm-std/backtraces"]
+# use library feature to disable all instantiate/execute/query exports
+library = []
+
+[dependencies]
+cw-utils = "0.16.0"
+cw2 = "0.16.0"
+cw20 = "0.16.0"
+cw20-base ={version = "0.16.0", features = ["library"]}
+cw-storage-plus = "0.16.0"
+cosmwasm-std = {version = "0.16.0"}
+cosmwasm-schema = "0.16.0"
+thiserror = "1.0.31"
+rust_decimal = "1.14.3"
+integer-sqrt = "0.1.5"
+integer-cbrt = "0.1.2"
+
+[dev-dependencies]
+
