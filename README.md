@@ -1,4 +1,4 @@
-# Spectrum Core Contracts
+# Multi Contracts based on Spectrum Core Contracts
 
 This monorepository contains the source code for the core smart contracts implementing Spectrum Protocol on the [Terra](https://terra.money) blockchain.
 
